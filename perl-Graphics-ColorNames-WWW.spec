@@ -1,18 +1,20 @@
 #
 # Conditional build:
-%bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Graphics
 %define		pnam	ColorNames-WWW
 Summary:	WWW color names and equivalent RGB values
+Summary(pl.UTF-8):	Nazwy kolorów WWW i ich wartości RGB
 Name:		perl-Graphics-ColorNames-WWW
 Version:	0.01
 Release:	1
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Graphics/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e8cb5f84b94fdb57f5bc4e6f988f1189
 URL:		http://search.cpan.org/dist/Graphics-ColorNames-WWW/
 BuildRequires:	perl-Graphics-ColorNames
 BuildRequires:	perl-Module-Load
@@ -23,6 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 WWW color names and equivalent RGB values.
+
+%description -l pl.UTF-8
+Nazwy kolorów WWW i ich wartości RGB.
 
 %prep
 %setup -q %{version}q -n %{pdir}-%{pnam}-%{version}
