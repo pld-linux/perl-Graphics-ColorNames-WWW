@@ -8,13 +8,13 @@
 Summary:	WWW color names and equivalent RGB values
 Summary(pl.UTF-8):	Nazwy kolorów WWW i ich wartości RGB
 Name:		perl-Graphics-ColorNames-WWW
-Version:	0.01
+Version:	1.00
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graphics/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e8cb5f84b94fdb57f5bc4e6f988f1189
+# Source0-md5:	9e0ab306ab2ffc9aa3f33ce233e6d20f
 URL:		http://search.cpan.org/dist/Graphics-ColorNames-WWW/
 BuildRequires:	perl-Graphics-ColorNames
 BuildRequires:	perl-Module-Load
