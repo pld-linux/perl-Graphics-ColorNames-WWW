@@ -8,7 +8,7 @@ Summary:	WWW color names and equivalent RGB values
 Summary(pl.UTF-8):	Nazwy kolorów WWW i ich wartości RGB
 Name:		perl-Graphics-ColorNames-WWW
 Version:	1.13
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
